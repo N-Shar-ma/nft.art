@@ -21,6 +21,9 @@ export function Nav() {
           <Image width={{ base: 30, lg: "40px" }} src={Logo} />
           <Heading size="md">{config?.companyName}</Heading>
         </Stack>
+        <Button as={Link} to="/register-artist">
+          Register Artist
+        </Button>
         {/* Connect to finnie button */}
         {isFinnieConnected ? (
           <Stack direction="row" align="center" spacing="1">

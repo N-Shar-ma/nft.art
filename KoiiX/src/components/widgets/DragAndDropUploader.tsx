@@ -76,11 +76,11 @@ export function DragAndDropUploader() {
       {step === 1 && (
         <Center flexDir="column" w="100%" bg="gray.100" border="1px dashed" p="2" borderColor="blue.500" rounded="md" cursor="pointer" {...getRootProps()}>
           <input {...getInputProps()} />
-          <Box direction="column" maxW="500px" mx="auto">
+          <Box flexDir="column" maxW="500px" mx="auto">
             <Text fontWeight="600" fontSize="2xl">
-              Drag, Drop, Earn.
+              Drag and Drop Art Here.
             </Text>
-            <Text fontSize="sm">Click or drag n' drop here to upload. </Text>
+            <Text fontSize="sm">Or click here</Text>
           </Box>
         </Center>
       )}

@@ -92,15 +92,15 @@ export function TipArtistModal({ isOpen, onClose, artistAddress, artistName }: P
         <ModalHeader as={Flex} align="center">
           <FaHandHoldingUsd />
           <Text as="span" ml="2" mr="2">
-            Send tip
+            Bid
           </Text>
           {artistName ? (
             <Badge as="span" fontSize="xs" textTransform="unset">
-              To {artistName}
+              For {artistName}
             </Badge>
           ) : (
             <Text as="span" d="flex" align="center" fontSize="xs">
-              To
+              For
               <Code as="span" ml="1" noOfLines={1} maxW="150px" title={artistAddress}>
                 {artistAddress}
               </Code>
@@ -149,7 +149,7 @@ export function TipArtistModal({ isOpen, onClose, artistAddress, artistName }: P
         <ModalFooter>
           {isFinnieConnected ? (
             <Button type="submit" colorScheme={errors?.amount ? "red" : "blue"} isLoading={status === "loading"}>
-              Send Tip
+              Bid
             </Button>
           ) : (
             <Button isLoading={isLoading} onClick={connectFinnie}>
