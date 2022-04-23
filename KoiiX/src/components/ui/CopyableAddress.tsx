@@ -15,7 +15,7 @@ export const CopyableAddress = ({ address, ...restProps }: Props) => {
       <Code noOfLines={1} w="100%" flexBasis="100%" fontWeight="600" fontSize="lg" h="32px" lineHeight="32px" color="blue.500">
         {address}
       </Code>
-      <Tooltip bg="blue.500" color="white" hasArrow placement="top" isOpen={hasCopied} label="Copied!">
+      <Tooltip bg="teal.500" color="white" hasArrow placement="top" isOpen={hasCopied} label="Copied!">
         <IconButton
           flexBasis="32px"
           flexShrink="0"

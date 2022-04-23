@@ -116,7 +116,7 @@ const Footbar = ({ nft }: Props) => {
       {isShareModalOpen && <ShareModal isOpen={isShareModalOpen} onClose={closeShareModal} nftId={nft?.id} nftTitle={nft?.title} />}
       {isTipModalOpen && <TipArtistModal isOpen={isTipModalOpen} onClose={closeTipModal} artistAddress={nft?.owner} artistName={nft?.name} />}
 
-      <Stack direction="row" p="2" roundedBottom="md" bg="blue.500" color="white" zIndex="3">
+      <Stack direction="row" p="2" roundedBottom="md" bg="teal.500" color="white" zIndex="3">
         <ButtonGroup
           w="100%"
           size="xs"

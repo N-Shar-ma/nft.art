@@ -81,7 +81,7 @@ export const theme = extendTheme({
   components: {
     Button: {
       defaultProps: {
-        colorScheme: "blue",
+        colorScheme: "teal",
         size: "sm"
       }
     },

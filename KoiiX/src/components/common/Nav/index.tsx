@@ -15,7 +15,7 @@ export function Nav() {
     state: { connectFinnie, disconnectFinnie, isLoading, isFinnieConnected, walletBalance, walletAddress }
   } = useFinnie();
   return (
-    <Box bg="blue.500" px="4" color="white">
+    <Box bg="teal.500" px="4" color="white">
       <Flex mx="auto" maxW="container.lg" justify="space-between" align="center" py="3">
         <Stack as={Link} to="/" direction="row" align="center">
           <Image width={{ base: 30, lg: "40px" }} src={Logo} />
@@ -26,7 +26,7 @@ export function Nav() {
           <Stack direction="row" align="center" spacing="1">
             <Menu>
               <MenuButton>
-                <Stack align="center" direction="row" spacing="4" cursor="pointer" bg="blue.400" px="2" py="1" rounded="sm" fontSize="sm" fontWeight="600">
+                <Stack align="center" direction="row" spacing="4" cursor="pointer" bg="teal.400" px="2" py="1" rounded="sm" fontSize="sm" fontWeight="600">
                   {/* Koii balance */}
                   <Stack direction="row" align="center">
                     <KoiiIcon boxSize="25px" />
@@ -45,8 +45,8 @@ export function Nav() {
                 </MenuItem>
               </MenuList>
             </Menu>
-            <Tooltip bg="blue.500" color="white" hasArrow placement="bottom" label="My content">
-              <IconButton as={Link} to={`/artist/${walletAddress}`} icon={<RiUser4Line size="20px" />} aria-label="go-to-my-page" bg="blue.400" rounded="sm" h="33px" />
+            <Tooltip bg="teal.500" color="white" hasArrow placement="bottom" label="My content">
+              <IconButton as={Link} to={`/artist/${walletAddress}`} icon={<RiUser4Line size="20px" />} aria-label="go-to-my-page" bg="teal.400" rounded="sm" h="33px" />
             </Tooltip>
           </Stack>
         ) : (

@@ -20,7 +20,7 @@ export const NftFootbar = ({ nft, ...restProps }: Props) => {
       {isShareModalOpen && <ShareModal isOpen={isShareModalOpen} onClose={closeShareModal} nftId={nft?.id} nftTitle={nft?.title} />}
       {isTipModalOpen && <TipArtistModal isOpen={isTipModalOpen} onClose={closeTipModal} artistAddress={nft?.owner || nft?.creator} artistName={nft?.name} />}
 
-      <Stack direction="row" p="2" roundedBottom="md" bg="blue.500" color="white" zIndex="3" {...restProps}>
+      <Stack direction="row" p="2" roundedBottom="md" bg="teal.500" color="white" zIndex="3" {...restProps}>
         <ButtonGroup
           w="100%"
           size="xs"

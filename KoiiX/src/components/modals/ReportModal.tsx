@@ -88,7 +88,7 @@ export function ReportModal({ isOpen, onClose, nftId, nftTitle }: Props) {
             </FormControl>
             <FormControl id="attachments" mt="2">
               <Stack direction="row" align="center" spacing="0">
-                <FormLabel bg="blue.500" m="0 6px 0 0" p="2" textAlign="center" w="100px" color="white" rounded="md" cursor="pointer">
+                <FormLabel bg="teal.500" m="0 6px 0 0" p="2" textAlign="center" w="100px" color="white" rounded="md" cursor="pointer">
                   Attach file
                 </FormLabel>
                 <Text color="blue.300" fontSize="xs">
