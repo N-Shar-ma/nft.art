@@ -34,7 +34,7 @@ export const App = () => {
               </QueryParamProvider>
             </RouterWrapper>
           </FinnieProvider>
-          <ReactQueryDevtools initialIsOpen={true} />
+          {/* <ReactQueryDevtools initialIsOpen={true} /> */}
         </QueryClientProvider>
       </ChakraProvider>
     </>
