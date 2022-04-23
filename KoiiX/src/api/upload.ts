@@ -62,7 +62,7 @@ export const initializeArTx = async ({ walletAddress, data }: InitializeArTxProp
       contentType: data?.file?.type,
       createdAt,
       tags: data?.tags?.split?.(",") || [],
-      isNsfw: data?.isNsfw
+      //isNsfw: data?.isNsfw
     };
     // Create transaction
     let tx = await createArTx(dataBuffer, initialState);
@@ -105,7 +105,7 @@ export const createArTx = async (dataBuffer: any, initialState: any) => {
     tx.addTag("App-Version", "0.3.0");
     tx.addTag("Contract-Src", "r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc");
     tx.addTag("Init-State", JSON.stringify(initialState));
-    tx.addTag("NSFW", initialState?.isNsfw);
+    //tx.addTag("NSFW", initialState?.isNsfw);
 
     return tx;
   } catch (error: any) {
@@ -147,7 +147,7 @@ export const signArTx = async (tx: any, initialState: any, media: any) => {
   */
     await window.koiiWallet.registerData(tx.id);
 
-    await generateCardWithData(body).catch(() => {});
+    await generateCardWithData(body).catch(() => { });
 
     return {
       tx: tx
