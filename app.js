@@ -54,8 +54,8 @@ app.post("/", (req, res) => {
         console.log("value rejected");
 });
 app.get("/", (req, res) => {
-    Creators.find({ name: name })
-        .then(creator => { req.send(creator) });;
+    Creators.find()
+        .then(creators => { req.send(creators) });;
 })
 app.listen(8080, () => {
     console.log("started listening")
