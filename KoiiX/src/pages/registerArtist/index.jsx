@@ -7,31 +7,31 @@ import { useForm } from "react-hook-form";
 export function RegisterArtist() {
     const { handleSubmit, register, reset } = useForm();
     return (
-    <Box bg="gray.50" p="2" rounded="md" pos="relative" zIndex="1">
-            <Stack w="100%">
-            <FormControl id="name">
-                <FormLabel>Name</FormLabel>
-                <Input {...register("name", { required: true })} placeholder="John Doe" />
-            </FormControl>
-            <FormControl id="story" size="sm">
-                <FormLabel>Your Story</FormLabel>
-                <Textarea {...register("story")} rows={2} fontSize="sm" placeholder="I always felt like I viewed the world differently from others..." />
-            </FormControl>
-            <FormControl id="documentslinks">
-                <FormLabel>Link to a drive with all documents proving your autism</FormLabel>
-                <Input {...register("tags")} placeholder="drive.google.com/drive/..." />
-            </FormControl>
-            <FormControl id="DOB">
-                <FormLabel>Date of Birth</FormLabel>
-                <Input {...register("DOB")} type="date" />
-            </FormControl>
-            {/* Bottom bar */}
-            <Stack direction="row" align="center">
-                <Button type="submit" flex="1">
-                Submit
-                </Button>
+        <Box bg="gray.50" w="550px" h="500px" rounded="md" pos="relative" zIndex="1" margin="auto" paddingLeft="46px" paddingTop="44px">
+            <Stack w="90%"  >
+                <FormControl id="name" h="75px">
+                    <FormLabel fontSize="l">Name</FormLabel>
+                    <Input {...register("name", { required: true })} placeholder="John Doe" />
+                </FormControl>
+                <FormControl id="story" h="100px">
+                    <FormLabel fontSize="l">Your Story</FormLabel>
+                    <Textarea {...register("story")} rows={2} fontSize="sm" placeholder="I always felt like I viewed the world differently from others..." />
+                </FormControl>
+                <FormControl id="documentslinks" h="75px">
+                    <FormLabel fontSize="l">Link to a drive with all documents proving your autism</FormLabel>
+                    <Input {...register("tags")} placeholder="drive.google.com/drive/..." />
+                </FormControl>
+                <FormControl id="DOB" h="75px">
+                    <FormLabel fontSize="l">Date of Birth</FormLabel>
+                    <Input {...register("DOB")} type="date" />
+                </FormControl>
+                {/* Bottom bar */}
+                <Stack direction="row" align="center">
+                    <Button type="submit" flex="1">
+                        Submit
+                    </Button>
+                </Stack>
             </Stack>
-            </Stack>
-    </Box>
+        </Box>
     );
 }
