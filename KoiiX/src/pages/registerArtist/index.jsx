@@ -17,7 +17,7 @@ export function RegisterArtist() {
             DOB
         }
         try {
-            const res = await fetch("localhost://8080", {
+            const res = await fetch("https://nft-art-backend.onrender.com", {
                 method: "POST",
                 body: JSON.stringify(data)
             })
