@@ -31,7 +31,10 @@ import { RiExternalLinkLine } from "react-icons/ri";
 import { KoiiIcon } from "components/icons";
 import { ImArrowRight2, ImArrowLeft2 } from "react-icons/im";
 import { motion } from "framer-motion";
-
+/**
+ * View Individual Nft and details about it
+ 
+ */
 interface RouteProps {
   id: string;
 }
