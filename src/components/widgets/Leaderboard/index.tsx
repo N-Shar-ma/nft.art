@@ -1,6 +1,6 @@
 // ui
 import { Box, Flex, Heading, Stack } from "@chakra-ui/react";
-import { TimeFilter, NsfwFilter } from "components/filters";
+import { TimeFilter, ReportFilter } from "components/filters";
 import { TopNftsContent } from "components/widgets";
 
 export function Leaderboard() {
@@ -12,7 +12,7 @@ export function Leaderboard() {
         <Stack>
           {/* Filters */}
           <TimeFilter />
-          <NsfwFilter />
+          <ReportFilter />
           {/* Nfts */}
         </Stack>
       </Flex>

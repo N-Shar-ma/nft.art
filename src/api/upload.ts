@@ -62,7 +62,7 @@ export const initializeArTx = async ({ walletAddress, data }: InitializeArTxProp
       contentType: data?.file?.type,
       createdAt,
       tags: data?.tags?.split?.(",") || [],
-      //isNsfw: data?.isNsfw
+      //isReport: data?.isReport
     };
     // Create transaction
     let tx = await createArTx(dataBuffer, initialState);
@@ -105,7 +105,7 @@ export const createArTx = async (dataBuffer: any, initialState: any) => {
     tx.addTag("App-Version", "0.3.0");
     tx.addTag("Contract-Src", "r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc");
     tx.addTag("Init-State", JSON.stringify(initialState));
-    //tx.addTag("NSFW", initialState?.isNsfw);
+    //tx.addTag("NSFW", initialState?.isReport);
 
     return tx;
   } catch (error: any) {

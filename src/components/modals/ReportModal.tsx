@@ -1,7 +1,7 @@
 import { useState } from "react";
 // api
 
-import { voteAsNsfw } from "api";
+import { voteAsReport } from "api";
 // ui
 import {
   Flex,
@@ -38,7 +38,7 @@ export function ReportModal({ isOpen, onClose, nftId, nftTitle }: Props) {
   const onSubmit = async () => {
     try {
       setStatus("loading");
-      await voteAsNsfw(nftId).then(() => {
+      await voteAsReport(nftId).then(() => {
         toast({
           title: "Thanks.",
           description: "Nft successfully reported",
