@@ -13,6 +13,10 @@ interface RouteProps {
   id: string;
 }
 
+/**
+ * Information and details about the artist and the nfts
+ */
+
 export function Artist({ match }: RouteComponentProps<RouteProps>) {
   /* Get artist based on url params */
   const { data: artist, isLoading, isError } = useArtist({ id: match?.params?.id });
