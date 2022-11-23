@@ -209,6 +209,12 @@ export function DragAndDropUploader() {
   );
 }
 
+/**
+ * 
+ * @param children
+ * @param isLoading
+ * @constructor
+ */
 const DragAndDropContainer = ({ children, isLoading }: { children: ReactNode; isLoading: boolean }) => {
   return (
     <Box bg="gray.50" p="2" rounded="md" pos="relative" zIndex="1">
