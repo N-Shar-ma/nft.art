@@ -3,7 +3,8 @@ import { Box, Center, Text, Stack, FormControl, FormLabel, Input, Textarea, Icon
 import { useForm } from "react-hook-form";
 
 /**
- * The registerArtist page is where a new artist will register and provide his email and other details.
+ * The registerArtist page is where a new artist will register and provide his name, email and other details.
+ * The Artist will also provide respective documents as proof that they are autistic.
  */
 
 export function RegisterArtist() {
