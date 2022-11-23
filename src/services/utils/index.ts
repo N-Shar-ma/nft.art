@@ -184,6 +184,9 @@ export const formatUnixTimestamp = (
   return new Date(parseInt(timestamp) * 1000).toLocaleString(undefined, options);
 };
 
+/**
+ * Reload the current web page
+ */
 export const refreshPage = () => {
   window?.location.reload();
 };
