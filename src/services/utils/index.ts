@@ -22,12 +22,24 @@ export const getNftsStats = (nfts: any) =>
     [0, 0]
   );
 
+/**
+ * Get a number formatted in the specified way
+ * @param {Number} val the number to be formatted
+ * @param {Object} options optional settings for formatting
+ * @returns {Number} the formatted digit number
+ */
 export const formatDigitNumber = (val: any, options?: any) => {
   if (typeof val !== "number") return 0;
   if (val) return val.toLocaleString("en-US", { maximumFractionDigits: 2, ...options });
   else return 0;
 };
 
+/**
+ * Get a string of a number parsed as an integer
+ * @param {string} x the string to be integer parsed
+ * @param {number} base optional base for the number system
+ * @returns {Number} the parsed number
+ */
 export const parseString = (x: string, base?: any) => {
   const parsed = parseInt(x, base);
   if (isNaN(parsed)) {
