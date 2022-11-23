@@ -14,6 +14,10 @@ import { convertToAr, getMediaType } from "services/utils";
 // api
 import { initializeArTx, signArTx } from "api/upload";
 
+/**
+ * Generate and return an area where registered autistic arts can upload their art and then fill in required details to create an NFT
+ * @constructor Construct a drag and drop uploader for art.
+ */
 export function DragAndDropUploader() {
   /* Finnie */
   const {

@@ -8,6 +8,10 @@ import { Alert, AlertIcon, AlertTitle, AlertDescription, Button, Center, Spinner
 import { RenderNftsList } from "components/widgets";
 import { refreshPage } from "services/utils";
 
+/**
+ * Generate and return a grid to showcase top NFTs according to the filters set
+ * @constructor Construct a grid with top NFTs.
+ */
 const TopNftsContent = ({ query }: any) => {
   /*  */
   const { t: timeframe } = query;

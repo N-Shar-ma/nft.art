@@ -13,6 +13,10 @@ interface Props {
   nft: Record<string, any>;
 }
 
+/**
+ * Generate and return a large card with the thumbnail, title and desciption for an NFT along with a footer
+ * @constructor Construct a big card with nft details.
+ */
 export const NftFeaturedCard = memo<Props>(
   ({ nft }) => {
     const MotionFlex = motion(Flex);

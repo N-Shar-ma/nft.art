@@ -5,6 +5,10 @@ interface Props {
   item: Record<string, any>;
 }
 
+/**
+ * Generate and return a card with the thumbnail, title and desciption for an NFT
+ * @constructor Construct a card with nft details.
+ */
 export function NftCard({ item }: Props) {
   return (
     <Flex

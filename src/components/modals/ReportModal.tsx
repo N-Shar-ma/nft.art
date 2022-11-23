@@ -32,6 +32,10 @@ interface Props {
   nftTitle: string;
 }
 
+/**
+ * Generate and return a modal to submit a report with reason against an NFT
+ * @constructor Construct a modal to report NFTs.
+ */
 export function ReportModal({ isOpen, onClose, nftId, nftTitle }: Props) {
   const toast = useToast();
   const [status, setStatus] = useState("idle");

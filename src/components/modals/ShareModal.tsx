@@ -28,6 +28,10 @@ interface Props {
   nftTitle: string;
 }
 
+/**
+ * Generate and return a modal to share an NFT on multiple different social media apps
+ * @constructor Construct a modal to share an NFT.
+ */
 export function ShareModal({ isOpen, onClose, nftId, nftTitle }: Props) {
   const permalink = `https://koii.live/${nftId}/.html`;
   const embedLink = `<iframe width="100%" src="${permalink}" title="Koii  NFT image" frameborder="0" allowfullscreen></iframe>`;

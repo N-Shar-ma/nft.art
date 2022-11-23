@@ -10,6 +10,11 @@ import { ArweaveIcon, KoiiIcon } from "components/icons";
 import { RiUser4Line } from "react-icons/ri";
 // assets
 import Logo from "assets/logo.png";
+
+/**
+ * Generate and return a navigation bar with logo, lonks to other pages and wallet
+ * @constructor Construct a navbar for the website.
+ */
 export function Nav() {
   const {
     state: { connectFinnie, disconnectFinnie, isLoading, isFinnieConnected, walletBalance, walletAddress }

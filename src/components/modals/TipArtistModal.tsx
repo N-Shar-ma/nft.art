@@ -38,6 +38,10 @@ interface Props {
   artistName: string;
 }
 
+/**
+ * Generate and return a modal to pay for an NFT and adjust wallet balance accordingly
+ * @constructor Construct a modal to tip artist for autistic art.
+ */
 export function TipArtistModal({ isOpen, onClose, artistAddress, artistName }: Props) {
   /* Finnie */
   const {
