@@ -14,9 +14,9 @@ interface RouteProps {
 }
 
 /**
- * Information and details about the artist and the nfts
+ * Generate and return the artist's page which has their name, avatar, description, stats and a grid of their NFTs.
+ * @constructor Construct the artist's page.
  */
-
 export function Artist({ match }: RouteComponentProps<RouteProps>) {
   /* Get artist based on url params */
   const { data: artist, isLoading, isError } = useArtist({ id: match?.params?.id });
@@ -66,9 +66,9 @@ export function Artist({ match }: RouteComponentProps<RouteProps>) {
             {/* Address */}
             <CopyableAddress address={match?.params?.id} mb="2" w="100%" maxW="300px" />
 
-            {/* <Heading d="flex" alignItems="center" as="h2" size="lg" noOfLines={1} color="blue.500">
+            {<Heading d="flex" alignItems="center" as="h2" size="lg" noOfLines={1} color="blue.500">
               {artistData?.name}
-            </Heading> */}
+            </Heading>}
             {/* Description */}
             <Text noOfLines={4} mt="1" mb="2" fontSize="sm" lineHeight="short">
               {artistData?.description}

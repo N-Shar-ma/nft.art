@@ -3,10 +3,9 @@ import { Box, Center, Text, Stack, FormControl, FormLabel, Input, Textarea, Icon
 import { useForm } from "react-hook-form";
 
 /**
- * The registerArtist page is where a new artist will register and provide his name, email and other details.
- * The Artist will also provide respective documents as proof that they are autistic.
+ * Generate and return the register artist's page which has a form with fields for name, DOB, background and link to documents as proof that they are autistic.
+ * @constructor Construct the page to let an autistic artist register with this marketplace.
  */
-
 export function RegisterArtist() {
     const { handleSubmit, register } = useForm();
     const onSubmit = async ({

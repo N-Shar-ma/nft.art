@@ -31,14 +31,14 @@ import { RiExternalLinkLine } from "react-icons/ri";
 import { KoiiIcon } from "components/icons";
 import { ImArrowRight2, ImArrowLeft2 } from "react-icons/im";
 import { motion } from "framer-motion";
-/**
- * View Individual Nft and details about it
- 
- */
 interface RouteProps {
   id: string;
 }
 
+/**
+ * Generate and return the NFT's page which has the artwork, its description, stats and options to bid, share or report.
+ * @constructor Construct the NFT's page.
+ */
 export function Nft({ match }: RouteComponentProps<RouteProps>) {
   /* Get nft based on url params */
   const { data: nft, isLoading, isError } = useNft({ id: match?.params?.id });
